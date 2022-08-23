@@ -1,0 +1,11 @@
+/* blocks */
+
+/* header */
+@import url(blocks/header.css);
+
+/*main*/
+@import url(blocks/comparison.css);
+@import url(blocks/reviews.css);
+
+/* footer */
+@import url(blocks/footer.css);
