@@ -3,144 +3,213 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <title>МойМаркет</title>
 </head>
 <body>
-  <header>
-    <h1 id="pageUp"><span style="color: #ff5522;">Мой</span>Маркет</h1>
+  <div id="top" />
+  <header class="header">
+    <a class="header__logo" href="index.html"><img src="img/main-logo.png" alt="Логотип сайта"></a>
+    <h1 class="header__title"><span class="header__title-decoration">Мой</span>Маркет</h1>
   </header>
 
-  <nav>
-    <a href="#">Электроника</a> > 
-    <a href="#">Смартфоны и гаджеты</a> >
-    <a href="#">Мобильные телефоны</a> >
-    <a href="#">Apple</a>
+  <nav class="navigation">
+    <a class="navigation__item" href="#">Электроника</a> > 
+    <a class="navigation__item" href="#">Смартфоны и гаджеты</a> >
+    <a class="navigation__item" href="#">Мобильные телефоны</a> >
+    <a class="navigation__item" href="#">Apple</a>
   </nav>
 
   <main>
-    <section>
-      <img src="img/image-1.webp" height="400px" alt="Вид Apple iPhone 13 спереди и сзади">
-      <img src="img/image-2.webp" height="400px" alt="Фронтальный вид Apple iPhone 13">
-      <img src="img/image-3.webp" height="400px" alt="Вид сбоку Apple iPhone 13">
-      <img src="img/image-4.webp" height="400px" alt="Камера Apple iPhone 13">
-      <img src="img/image-5.webp" height="400px" alt="Вид Apple iPhone 13 сзади"> 
+    <section class="appearance">
+      <img class="appearance__item" src="img/image-1.webp" height="400" alt="Вид Apple iPhone 13 спереди и сзади">
+      <img class="appearance__item" src="img/image-2.webp" height="400" alt="Фронтальный вид Apple iPhone 13">
+      <img class="appearance__item" src="img/image-3.webp" height="400" alt="Вид сбоку Apple iPhone 13">
+      <img class="appearance__item" src="img/image-4.webp" height="400" alt="Камера Apple iPhone 13">
+      <img class="appearance__item" src="img/image-5.webp" height="400" alt="Вид Apple iPhone 13 сзади"> 
     </section>
 
-    <h2>Смартфон Apple iPhone 13</h2>
-    <h3>Цена <s>75 990</s>₽ 67 990₽</h3>
+    <h2 class="product-title">Смартфон Apple iPhone 13</h2>
+    <h3 class="product-price">Цена <s>75 990</s>₽ 67 990₽</h3>
 
-    <p>
-      <button type="button">Добавить в корзину</button>
-      <button type="button">В избранное</button>
+    <p class="products-control">
+      <button class="products-control__button" type="button">Добавить в корзину</button>
+      <button class="products-control__button" type="button">В избранное</button>
     </p>
 
-    <section>
-      <h3>Цвет товара: Синий</h3>
-      <div>
-        <img src="img/color-1.webp" height="100px" alt="Красный цвет">
-        <img src="img/color-2.webp" height="100px" alt="Зеленый цвет">
-        <img src="img/color-3.webp" height="100px" alt="Розовый цвет">
-        <img src="img/color-4.webp" height="100px" alt="Синий цвет">
-        <img src="img/color-5.webp" height="100px" alt="Белый цвет">
-        <img src="img/color-6.webp" height="100px" alt="Черный цвет">
+    <section class="product-color">
+      <h3 class="product-color__title">Цвет товара: Синий</h3>
+      <div class="product-color__list">
+        <img class="product-color__item" src="img/color-1.webp" height="100" alt="Красный цвет">
+        <img class="product-color__item" src="img/color-2.webp" height="100" alt="Зеленый цвет">
+        <img class="product-color__item" src="img/color-3.webp" height="100" alt="Розовый цвет">
+        <img class="product-color__item" src="img/color-4.webp" height="100" alt="Синий цвет">
+        <img class="product-color__item" src="img/color-5.webp" height="100" alt="Белый цвет">
+        <img class="product-color__item" src="img/color-6.webp" height="100" alt="Черный цвет">
       </div>
     </section>
 
-    <section>
-      <h3>Конфигурация памяти: 128 ГБ</h3>
-      <div>
-        <button type="button">128 ГБ</button>
-        <button type="button">256 ГБ</button>
-        <button type="button">512 ГБ</button>
+    <section class="inner-memory">
+      <h3 class="inner-memory__title">Конфигурация памяти: 128 ГБ</h3>
+      <div class="inner-memory__list">
+        <button class="inner-memory__item" type="button">128 ГБ</button>
+        <button class="inner-memory__item" type="button">256 ГБ</button>
+        <button class="inner-memory__item" type="button">512 ГБ</button>
       </div>
     </section>
 
-    <section>
-      <h3>Характеристики товара</h3>
-      <ul>
-        <li>Экран: <b>6.1</b></li>
-        <li>Встроенная память: <b>128 ГБ</b></li>
-        <li>Операционная система: <b>iOS 15</b></li>
-        <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-        <li>Процессор:<b><a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></b></li>
-        <li>Вес: <b>173 г</b></li>
+    <section class="characteristics">
+      <h3 class="characteristics__title">Характеристики товара</h3>
+      <ul class="characteristics__list">
+        <li class="characteristics__item">Экран: <b>6.1</b></li>
+        <li class="characteristics__item">Встроенная память: <b>128 ГБ</b></li>
+        <li class="characteristics__item">Операционная система: <b>iOS 15</b></li>
+        <li class="characteristics__item">Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
+        <li class="characteristics__item">Процессор:<b><a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></b></li>
+        <li class="characteristics__item">Вес: <b>173 г</b></li>
       </ul> 
     </section>
 
-    <section>
-      <h3>Описание</h3> 
-      <p>
+    <aside class="advertisements">
+      <div class="advertisements__list">
+        <iframe class="advertisements__item" src="advertisement.html" frameborder="1" height="400" width="300"></iframe>
+        <iframe class="advertisements__item" src="advertisement.html" frameborder="1" height="400" width="300"></iframe>
+      </div>
+    </aside>
+
+    <section class="description">
+      <h3 class="description__title">Описание</h3> 
+      <p class="description__item">
         Наша самая совершенная система двух камер.<br>
         Особый взгляд на прочность дисплея.<br>
         Чип, с которым всё супербыстро.<br>
         Аккумулятор держится заметно дольше.<br>
         <i>iPhone 13 - сильный мира всего.</i>
       </p>
-      <p>
+      <p class="description__item">
         Мы разработали совершенно новую схему расположения и развернули объективы на45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двухкамер с увеличенной матрицей широкоугольной камеры. Кроме того, мы освободилиместо для системы оптической стабилизации изображения сдвигом матрицы. Иповысили скорость работы матрицы на сверхширокоугольной камере.
       </p>
-      <p>
+      <p class="description__item">
         Новая сверхширокоугольная камера видит больше деталей в тёмных областяхснимков. Новая широкоугольная камера улавливает на 47% больше света для болеекачественных фотографий и видео. Новая оптическая стабилизация со сдвигомматрицы обеспечит чёткие кадры даже в неустойчивом положении.Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещенияфокуса и изменения резкости. Просто начните запись видео. 
       </p>
-      <p>
+      <p class="description__item">
         Режим «Киноэффект»будет удерживать фокус на объекте съёмки, создавая красивый эффект размытиявокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другогочеловека или объект, который появился в кадре. Теперь ваши видео будут смотретьсякак настоящее кино.
       </p>
     </section>
 
-    <section>
-      <h3>Отзывы</h3>
-      <div>
-        <div>
-          <img src="https://thispersondoesnotexist.com/image" height="200px" alt="Аватар автора комментария">
-        </div>
-        <p><b>Марк Г.</b></p>
-        <div>
-          <img src="img/star-5.png" height="30px" alt="Оценка товара">
-        </div>
-        <p>
-          <b>Опыт использования:</b> менее месяца
-        </p>
-        <p>
-          <b>Достоинства:</b> <br>
-          это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте.
-        </p>
-        <p>
-          <b>Недостатки:</b> <br>
-          к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное
-        </p>
-      </div>
+    <section class="comparison">
+      <h3 class="comparison__title">Сравнение моделей</h3>
       
-      <hr>
+      <div class="comparison__table">
+        <span class="comparison__cell-head">Модель</span>
+        <span class="comparison__cell-head">Вес</span>
+        <span class="comparison__cell-head">Высота</span>
+        <span class="comparison__cell-head">Ширина</span>
+        <span class="comparison__cell-head">Толщина</span>
+        <span class="comparison__cell-head">Чип</span>
+        <span class="comparison__cell-head">Объём памяти</span>
+        <span class="comparison__cell-head">Беспроводная зарядка</span>
+        <span class="comparison__cell-head">Аккумулятор</span>
 
-      <div>
-        <div>
-          <img src="https://thispersondoesnotexist.com/image" height="200px" alt="Аватар автора комментария">
-        </div>
-        <p><b>Валерий Коваленко</b></p>
-        <div>
-          <img src="img/star-4.png" height="30px" alt="Оценка товара">
-        </div>
-        <p>
-          <b>Опыт использования:</b> менее месяца
-        </p>
-        <p>
-          <b>Достоинства:</b> <br>
-          OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
-        </p>
-        <p>
-          <b>Недостатки:</b> <br>
-          Плохая ремонтопригодность
-        </p>
+        <span>Iphone11</span>
+        <span>194 грамма</span>
+        <span>150.9 мм</span>
+        <span>75.7 мм</span>
+        <span>8.3 мм</span>
+        <span>A13 Bionic chip</span>
+        <span>до 128 Гб</span>
+        <span>Нет</span>
+        <span>До 17 часов</span>
+
+        <span>Iphone12</span>
+        <span>164 грамма</span>
+        <span>146.7 мм</span>
+        <span>71.5 мм</span>
+        <span>7.4 мм</span>
+        <span>A14 Bionic chip</span>
+        <span>до 256 Гб</span>
+        <span>Да</span>
+        <span>До 19 часов</span>
+
+        <span>Iphone13</span>
+        <span>174 грамма</span>
+        <span>146.7 мм</span>
+        <span>71.5 мм</span>
+        <span>7.65 мм</span>
+        <span>A15 Bionic chip</span>
+        <span>до 512 Гб</span>
+        <span>Да</span>
+        <span>До 19 часов</span>
       </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__header">
+        <h3 class="reviews__title">Отзывы</h3>
+        <span class="reviews__amount">425</span>
+        <button class="reviews__add-reviews" type="button">Добавить отзыв</button>
+      </div>
+      <div class="reviews__list">
+        <div class="reviews__item review">
+          <div class="review__avatar">
+            <img src="https://thispersondoesnotexist.com/image" height="200" alt="Аватар автора комментария">
+          </div>
+          <p class="review__autor"><b>Марк Г.</b></p>
+          <div class="review__rating">
+            <img src="img/star-5.png" height="30" alt="Оценка товара">
+          </div>
+          <div class="review__details">
+            <p class="review__detail">
+              <b>Опыт использования:</b> менее месяца
+            </p>
+            <p class="review__detail">
+              <b>Достоинства:</b> <br>
+              это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте.
+            </p>
+            <p class="review__detail">
+              <b>Недостатки:</b> <br>
+              к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное
+            </p>
+          </div><!-- review__details -->
+        </div><!-- reviews__item review -->
+        
+        <hr>
+  
+        <div class="reviews__item review">
+          <div class="review__avatar">
+            <img src="https://thispersondoesnotexist.com/image" height="200" alt="Аватар автора комментария">
+          </div>
+          <p class="review__autor"><b>Валерий Коваленко</b></p>
+          <div class="review__rating">
+            <img src="img/star-4.png" height="30" alt="Оценка товара">
+          </div>
+          <div class="review__details">
+            <p class="review__detail">
+              <b>Опыт использования:</b> менее месяца
+            </p>
+            <p class="review__detail">
+              <b>Достоинства:</b> <br>
+              OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
+            </p>
+            <p class="review__detail">
+              <b>Недостатки:</b> <br>
+              Плохая ремонтопригодность
+            </p>
+          </div><!-- review__details -->
+        </div><!-- reviews__item review -->
+      </div><!-- reviews__list -->
     </section>  
 </main>
-<footer>
-  <p>
-    © ООО «<span style="color: #ff5522;">Мой</span>Маркет», 2018-2022. Для уточненияинформации звоните по номеру <a href="tel:79000000000">+7 900 000 0000</a>, 
+<footer class="footer">
+  <p class="footer__copyright">
+    © ООО «<span class="footer__title-decoration">Мой</span>Маркет», 2018-2022. Для уточненияинформации звоните по номеру <a href="tel:79000000000">+7 900 000 0000</a>, 
     апредложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a>
   </p>
-  <p>
-    <a href="#pageUp">Наверх</a>
+  <p class="footer__top-page">
+    <a class="footer__top-link" href="#top">Наверх</a>
   </p>
 </footer>
 </body>
