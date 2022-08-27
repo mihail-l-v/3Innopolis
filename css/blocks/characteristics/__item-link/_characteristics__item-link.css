@@ -1,0 +1,6 @@
+@import url(_hover/_characteristics__item-link_hover.css);
+
+.characteristics__item-link {
+  color: #018ad2;
+  text-decoration: none;
+}
