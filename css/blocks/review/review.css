@@ -1,0 +1,5 @@
+@import url(__avatar/_review__avatar.css);
+
+.review {
+  display: flex;
+}

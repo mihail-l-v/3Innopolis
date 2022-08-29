@@ -1,0 +1,10 @@
+.comparison__table {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  grid-template-rows: repeat(9, auto);
+}
+
+.comparison__table span {
+  border: 1px solid black;
+}
+

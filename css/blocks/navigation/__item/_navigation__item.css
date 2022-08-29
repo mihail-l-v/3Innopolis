@@ -1,0 +1,6 @@
+@import url(_hover/_navigation__item_hover.css);
+
+.navigation__item {
+  color: #018ad2;
+  text-decoration: none;
+}
