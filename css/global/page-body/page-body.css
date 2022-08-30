@@ -1,0 +1,8 @@
+@import url(__container/_page-body__container.css);
+
+.page-body {
+  font-size: 16px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+}
