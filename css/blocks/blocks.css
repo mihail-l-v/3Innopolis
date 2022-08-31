@@ -2,7 +2,7 @@
 @import url(navigation/navigation.css);
 @import url(main-container/main-container.css);
 @import url(aside-container/aside-container.css);
-@import url(product-container/product-container.css);
+@import url(product/product.css);
 @import url(price-menu/price-menu.css);
 @import url(button/button.css);
 @import url(appearance/appearance.css);
