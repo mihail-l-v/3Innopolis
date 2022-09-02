@@ -1,5 +1,6 @@
-@import url(_current/_product-color__picture_current.css);
+
 @import url(_hover/_product-color__picture_hover.css);
+@import url(_current/_product-color__picture_current.css);
 
 .product-color__picture {
   width: 80px;
@@ -13,6 +14,3 @@
   cursor: pointer;
 }
 
-.product-color__picture_current {
-  border: 2px solid var(--carrot);
-}

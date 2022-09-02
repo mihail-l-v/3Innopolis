@@ -8,7 +8,3 @@
   cursor: pointer;
   border-radius: 4px;
 }
-
-.inner-memory__item_current {
-  border: 2px solid var(--carrot);
-}
