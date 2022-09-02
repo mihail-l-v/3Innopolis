@@ -1,6 +1,11 @@
 @import url(header/header.css);
 @import url(navigation/navigation.css);
-@import url(products-control/products-control.css);
+@import url(main-container/main-container.css);
+@import url(aside-container/aside-container.css);
+@import url(product/product.css);
+@import url(price-menu/price-menu.css);
+@import url(button/button.css);
+@import url(appearance/appearance.css);
 @import url(advertisements/advertisements.css);
 @import url(inner-memory/inner-memory.css);
 @import url(characteristics/characteristics.css);
