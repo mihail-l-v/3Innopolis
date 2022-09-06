@@ -40,21 +40,33 @@
           <section class="product-color">
             <h3 class="product-color__title">Цвет товара: Синий</h3>
             <div class="product-color__list">
-              <img class="product-color__item" src="img/color-1.webp" height="100" alt="Красный цвет">
-              <img class="product-color__item" src="img/color-2.webp" height="100" alt="Зеленый цвет">
-              <img class="product-color__item" src="img/color-3.webp" height="100" alt="Розовый цвет">
-              <img class="product-color__item" src="img/color-4.webp" height="100" alt="Синий цвет">
-              <img class="product-color__item" src="img/color-5.webp" height="100" alt="Белый цвет">
-              <img class="product-color__item" src="img/color-6.webp" height="100" alt="Черный цвет">
+              <picture class="product-color__picture product-color__picture_hover">
+                <img class="product-color__item" src="img/color-1.webp" height="60" alt="Красный цвет">
+              </picture>
+              <picture class="product-color__picture product-color__picture_hover">
+                <img class="product-color__item" src="img/color-2.webp" height="60" alt="Зеленый цвет">
+              </picture>
+              <picture class="product-color__picture product-color__picture_hover">
+                <img class="product-color__item" src="img/color-3.webp" height="60" alt="Розовый цвет">
+              </picture>
+              <picture class="product-color__picture product-color__picture_hover product-color__picture_current">
+                <img class="product-color__item" src="img/color-4.webp" height="60" alt="Синий цвет">
+              </picture>
+              <picture class="product-color__picture product-color__picture_hover">
+                <img class="product-color__item" src="img/color-5.webp" height="60" alt="Белый цвет">
+              </picture>
+              <picture class="product-color__picture product-color__picture_hover">
+                <img class="product-color__item" src="img/color-6.webp" height="60" alt="Черный цвет">
+              </picture>
             </div>
           </section>
 
           <section class="inner-memory">
             <h3 class="inner-memory__title">Конфигурация памяти: 128 ГБ</h3>
             <div class="inner-memory__list">
-              <button class="inner-memory__item" type="button">128 ГБ</button>
-              <button class="inner-memory__item" type="button">256 ГБ</button>
-              <button class="inner-memory__item" type="button">512 ГБ</button>
+              <button class="inner-memory__item inner-memory__item_hover inner-memory__item_current" type="button">128 ГБ</button>
+              <button class="inner-memory__item inner-memory__item_hover" type="button">256 ГБ</button>
+              <button class="inner-memory__item inner-memory__item_hover" type="button">512 ГБ</button>
             </div>
           </section>
 
@@ -98,7 +110,7 @@
             <p class="price-menu__delivery">Самовывоз в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
             <p class="price-menu__delivery">Курьером в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
             <p class="price-menu__button">
-              <button class="price-menu__button button" type="button">Добавить в корзину</button>
+              <button class="price-menu__button button button_hover" type="button">Добавить в корзину</button>
             </p>
           </div>
 
