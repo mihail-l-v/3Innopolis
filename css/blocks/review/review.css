@@ -1,5 +1,11 @@
-@import url(__avatar/_review__avatar.css);
+@import url(__avatar-img/_review__avatar-img.css);
+@import url(__autor/_review__autor.css);
+@import url(__rating/_review__rating.css);
+@import url(__details/_review__details.css);
+@import url(__detail/_review__detail.css);
+@import url(__detail-title/_review__detail-title.css);
 
 .review {
   display: flex;
+  gap: 30px;
 }
