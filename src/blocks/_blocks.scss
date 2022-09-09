@@ -1,0 +1,55 @@
+.blocks {
+    @media screen and (max-width: $q-hd-screen) {
+    }
+
+    @media screen and (max-width: $high-hd-screen) {
+    }
+
+    @media screen and (max-width: $full-hd-screen) {
+    }
+
+    @media screen and (max-width: $dell-hd-screen) {
+    }
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $ready-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+    }
+
+    @media screen and (max-width: $middle-tablet-screen) {
+    }
+
+    @media screen and (max-width: $small-tablet-screen) {
+    }
+
+    @media screen and (max-width: $big-phone-screen) {
+    }
+
+    @media screen and (max-width: $middle-phone-screen) {
+    }
+
+    @media screen and (max-width: $small-phone-screen) {
+    }
+}
+
+@import "advertisements/advertisements";
+@import "appearance/appearance";
+@import "aside-container/aside-container";
+@import "button/button";
+@import "characteristics/characteristics";
+@import "comparison/comparison";
+@import "footer/footer";
+@import "header/header";
+@import "inner-memory/inner-memory";
+@import "main-container/main-container";
+@import "navigation/navigation";
+@import "page-body/page-body";
+@import "price-menu/price-menu";
+@import "product/product";
+@import "product-color/product-color";
+@import "review/review";
+@import "reviews/reviews";

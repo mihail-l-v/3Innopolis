@@ -1,0 +1,49 @@
+.price-menu {
+  padding: 20px;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-bottom: 40px;
+  width: 420px;
+
+    @media screen and (max-width: $q-hd-screen) {
+    }
+
+    @media screen and (max-width: $high-hd-screen) {
+    }
+
+    @media screen and (max-width: $full-hd-screen) {
+    }
+
+    @media screen and (max-width: $dell-hd-screen) {
+    }
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $ready-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+    }
+
+    @media screen and (max-width: $middle-tablet-screen) {
+    }
+
+    @media screen and (max-width: $small-tablet-screen) {
+    }
+
+    @media screen and (max-width: $big-phone-screen) {
+    }
+
+    @media screen and (max-width: $middle-phone-screen) {
+    }
+
+    @media screen and (max-width: $small-phone-screen) {
+    }
+}
+
+@import "__old-price/_price-menu__old-price";
+@import "__discont/_price-menu__discont";
+@import "__delivery-bold/_price-menu__delivery-bold";
+@import "__price/_price-menu__price";
