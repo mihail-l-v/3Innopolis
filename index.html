@@ -173,57 +173,59 @@
 
       <section class="reviews">
         <div class="reviews__header">
-          <h3 class="reviews__title">Отзывы</h3>
-          <span class="reviews__amount">425</span>
-          <button class="reviews__add-review" type="button">Добавить отзыв</button>
+          <div class="reviews__wrapper">
+            <h3 class="reviews__title">Отзывы</h3>
+            <span class="reviews__amount">425</span>
+          </div>
+          <button class="reviews__add-review reviews__add-review_hover" type="button">Добавить отзыв</button>
         </div>
         <div class="reviews__list">
           <div class="reviews__item review">
             <div class="review__avatar">
-              <img src="https://thispersondoesnotexist.com/image" height="200" alt="Аватар автора комментария">
+              <img class="review__avatar-img" src="https://thispersondoesnotexist.com/image" height="140" width="140" alt="Аватар автора комментария">
             </div>
             <div class="review__wrapper">
-              <p class="review__autor"><b>Марк Г.</b></p>
+              <p class="review__autor">Марк Г.</p>
               <div class="review__rating">
-                <img src="img/star-5.png" height="30" alt="Оценка товара">
+                <img src="img/star-5.svg" height="30" alt="Оценка товара">
               </div>
               <div class="review__details">
                 <p class="review__detail">
-                  <b>Опыт использования:</b> менее месяца
+                  <span class="review__detail-title">Опыт использования:</span> менее месяца
                 </p>
                 <p class="review__detail">
-                  <b>Достоинства:</b> <br>
+                  <span class="review__detail-title">Достоинства:</span> <br>
                   это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте.
                 </p>
                 <p class="review__detail">
-                  <b>Недостатки:</b> <br>
+                  <span class="review__detail-title">Недостатки:</span> <br>
                   к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное
                 </p>
               </div><!-- review__details -->
             </div><!-- review__wrapper -->
           </div><!-- reviews__item review -->
 
-          <hr>
+          <div class="reviews__separator"></div>
 
           <div class="reviews__item review">
             <div class="review__avatar">
-              <img src="https://thispersondoesnotexist.com/image" height="200" alt="Аватар автора комментария">
+              <img class="review__avatar-img" src="https://thispersondoesnotexist.com/image" height="140" width="140" alt="Аватар автора комментария">
             </div>
             <div class="review__wrapper">
-              <p class="review__autor"><b>Валерий Коваленко</b></p>
+              <p class="review__autor">Валерий Коваленко</p>
               <div class="review__rating">
-                <img src="img/star-4.png" height="30" alt="Оценка товара">
+                <img src="img/star-4.svg" height="30" alt="Оценка товара">
               </div>
               <div class="review__details">
                 <p class="review__detail">
-                  <b>Опыт использования:</b> менее месяца
+                  <span class="review__detail-title">Опыт использования:</span> менее месяца
                 </p>
                 <p class="review__detail">
-                  <b>Достоинства:</b> <br>
+                  <span class="review__detail-title">Достоинства:</span> <br>
                   OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго
                 </p>
                 <p class="review__detail">
-                  <b>Недостатки:</b> <br>
+                  <span class="review__detail-title">Недостатки:</span> <br>
                   Плохая ремонтопригодность
                 </p>
               </div><!-- review__details -->

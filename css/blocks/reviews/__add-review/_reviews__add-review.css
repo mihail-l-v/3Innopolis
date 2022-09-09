@@ -1,3 +1,11 @@
+@import url(_hover/_reviews__add_hover.css);
+
 .reviews__add-review {
-  padding: 8px 12px;
+  padding: 10px 20px;
+  background-color: inherit;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 4px;
+  cursor: pointer;
 }

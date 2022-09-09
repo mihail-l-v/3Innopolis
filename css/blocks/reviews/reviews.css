@@ -1,3 +1,11 @@
 @import url(__amount/_reviews__amount.css);
 @import url(__header/_reviews__header.css);
+@import url(__wrapper/_reviews__wrapper.css);
+@import url(__title/_reviews__title.css);
 @import url(__add-review/_reviews__add-review.css);
+@import url(__list/_reviews__list.css);
+@import url(__separator/_reviews__separator.css);
+
+.reviews {
+  max-width: 880px;
+}
