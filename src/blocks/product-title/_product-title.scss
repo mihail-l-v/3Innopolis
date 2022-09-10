@@ -1,7 +1,5 @@
-.header {
-  display: flex;
-  margin-bottom: 10px;
-
+.product-title {
+  margin-bottom: 30px;
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -39,4 +37,3 @@
     }
 }
 
-@import "__title-decoration/_header__title-decoration";

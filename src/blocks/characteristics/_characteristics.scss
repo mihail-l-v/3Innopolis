@@ -1,4 +1,5 @@
 .characteristics {
+  margin-bottom: 30px;
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -38,3 +39,4 @@
 
 @import "__list/_characteristics__list";
 @import "__item-link/_characteristics__item-link";
+@import "__title/_characteristics__title";
