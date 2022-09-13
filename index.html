@@ -11,7 +11,7 @@
 </head>
 <body class="page-body">
   <div class="page-body__container">
-    <div id="top" />
+    <div id="top"></div>
     <header class="header">
       <a class="header__logo" href="index.html"><img src="img/main-logo.png" alt="Логотип сайта"></a>
       <h1 class="header__title"><span class="header__title-decoration">Мой</span>Маркет</h1>
@@ -37,6 +37,7 @@
 
       <div class="main-container">
         <div class="product">
+
           <section class="product-color">
             <h3 class="product-color__title">Цвет товара: Синий</h3>
             <div class="product-color__list">
@@ -101,6 +102,49 @@
               Режим «Киноэффект»будет удерживать фокус на объекте съёмки, создавая красивый эффект размытиявокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другогочеловека или объект, который появился в кадре. Теперь ваши видео будут смотретьсякак настоящее кино.
             </p>
           </section>
+
+          <section class="comparison">
+            <h3 class="comparison__title">Сравнение моделей</h3>
+
+            <div class="comparison__table">
+              <span class="comparison__cell comparison__cell-head">Модель</span>
+              <span class="comparison__cell comparison__cell-head">Вес</span>
+              <span class="comparison__cell comparison__cell-head">Высота</span>
+              <span class="comparison__cell comparison__cell-head">Ширина</span>
+              <span class="comparison__cell comparison__cell-head">Толщина</span>
+              <span class="comparison__cell comparison__cell-head">Чип</span>
+              <span class="comparison__cell comparison__cell-head">Объём памяти</span>
+              <span class="comparison__cell comparison__cell-head">Аккумулятор</span>
+
+              <span class="comparison__cell">Iphone11</span>
+              <span class="comparison__cell">194 грамма</span>
+              <span class="comparison__cell">150.9 мм</span>
+              <span class="comparison__cell">75.7 мм</span>
+              <span class="comparison__cell">8.3 мм</span>
+              <span class="comparison__cell">A13 Bionic chip</span>
+              <span class="comparison__cell">до 128 Гб</span>
+              <span class="comparison__cell">До 17 часов</span>
+
+              <span class="comparison__cell">Iphone12</span>
+              <span class="comparison__cell">164 грамма</span>
+              <span class="comparison__cell">146.7 мм</span>
+              <span class="comparison__cell">71.5 мм</span>
+              <span class="comparison__cell">7.4 мм</span>
+              <span class="comparison__cell">A14 Bionic chip</span>
+              <span class="comparison__cell">до 256 Гб</span>
+              <span class="comparison__cell">До 19 часов</span>
+
+              <span class="comparison__cell">Iphone13</span>
+              <span class="comparison__cell">174 грамма</span>
+              <span class="comparison__cell">146.7 мм</span>
+              <span class="comparison__cell">71.5 мм</span>
+              <span class="comparison__cell">7.65 мм</span>
+              <span class="comparison__cell">A15 Bionic chip</span>
+              <span class="comparison__cell">до 512 Гб</span>
+              <span class="comparison__cell">До 19 часов</span>
+            </div>
+          </section>
+
         </div>
         <div class="aside-container">
 
@@ -124,52 +168,6 @@
 
         </div>
       </div>
-
-      <section class="comparison">
-        <h3 class="comparison__title">Сравнение моделей</h3>
-
-        <div class="comparison__table">
-          <span class="comparison__cell-head">Модель</span>
-          <span class="comparison__cell-head">Вес</span>
-          <span class="comparison__cell-head">Высота</span>
-          <span class="comparison__cell-head">Ширина</span>
-          <span class="comparison__cell-head">Толщина</span>
-          <span class="comparison__cell-head">Чип</span>
-          <span class="comparison__cell-head">Объём памяти</span>
-          <span class="comparison__cell-head">Беспроводная зарядка</span>
-          <span class="comparison__cell-head">Аккумулятор</span>
-
-          <span>Iphone11</span>
-          <span>194 грамма</span>
-          <span>150.9 мм</span>
-          <span>75.7 мм</span>
-          <span>8.3 мм</span>
-          <span>A13 Bionic chip</span>
-          <span>до 128 Гб</span>
-          <span>Нет</span>
-          <span>До 17 часов</span>
-
-          <span>Iphone12</span>
-          <span>164 грамма</span>
-          <span>146.7 мм</span>
-          <span>71.5 мм</span>
-          <span>7.4 мм</span>
-          <span>A14 Bionic chip</span>
-          <span>до 256 Гб</span>
-          <span>Да</span>
-          <span>До 19 часов</span>
-
-          <span>Iphone13</span>
-          <span>174 грамма</span>
-          <span>146.7 мм</span>
-          <span>71.5 мм</span>
-          <span>7.65 мм</span>
-          <span>A15 Bionic chip</span>
-          <span>до 512 Гб</span>
-          <span>Да</span>
-          <span>До 19 часов</span>
-        </div>
-      </section>
 
       <section class="reviews">
         <div class="reviews__header">
@@ -234,15 +232,17 @@
         </div><!-- reviews__list -->
       </section>
     </main>
-    <footer class="footer">
+  </div><!-- page-body__container -->
+  <footer class="footer">
+    <div class="footer__container">
       <p class="footer__copyright">
-        © ООО «<span class="footer__title-decoration">Мой</span>Маркет», 2018-2022. Для уточненияинформации звоните по номеру <a class="footer__copyright-link footer__copyright-link_hover" href="tel:79000000000">+7 900 000 0000</a>,
+        <span class="footer__title"> © ООО «<span class="footer__title-decoration">Мой</span>Маркет», 2018-2022. </span> <br> Для уточненияинформации звоните по номеру <a class="footer__copyright-link footer__copyright-link_hover" href="tel:79000000000">+7 900 000 0000</a>,<br>
         апредложения по сотрудничеству отправляйте на почту <a class="footer__copyright-link footer__copyright-link_hover" href="mailto:partner@mymarket.com">partner@mymarket.com</a>
       </p>
       <p class="footer__top-page">
         <a class="footer__top-link footer__top-link_hover" href="#top">Наверх</a>
       </p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>

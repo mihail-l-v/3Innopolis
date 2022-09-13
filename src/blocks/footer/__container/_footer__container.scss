@@ -1,4 +1,11 @@
-.comparison {
+.footer__container {
+  max-width: 1400px;
+  padding: 30px 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -36,7 +43,3 @@
     }
 }
 
-@import "__cell/_comparison__cell";
-@import "__title/_comparison__title";
-@import "__cell-head/_comparison__cell-head";
-@import "__table/_comparison__table";

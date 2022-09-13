@@ -1,11 +1,8 @@
 .comparison__table {
   display: grid;
-  grid-template-columns: repeat(9, auto);
-  grid-template-rows: repeat(9, auto);
-
-  span {
-    border: 1px solid $black;
-  }
+  grid-template-columns: repeat(8, auto);
+  border-right: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray;
 
     @media screen and (max-width: $q-hd-screen) {
     }

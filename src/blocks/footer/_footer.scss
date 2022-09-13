@@ -1,4 +1,8 @@
 .footer {
+  margin-top: 60px;
+  width: 100%;
+  background-color: $light-gray;
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -36,6 +40,8 @@
     }
 }
 
-@import "__copyright-link/_footer__copyright-link";
+@import "__title/_footer__title";
 @import "__title-decoration/_footer__title-decoration";
+@import "__copyright-link/_footer__copyright-link";
 @import "__top-link/_footer__top-link";
+@import "__container/_footer__container";

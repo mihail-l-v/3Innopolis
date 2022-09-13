@@ -1,4 +1,7 @@
-.comparison {
+.comparison__cell {
+  border-left: 1px solid $dark-gray;
+  padding: 10px;
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -36,7 +39,3 @@
     }
 }
 
-@import "__cell/_comparison__cell";
-@import "__title/_comparison__title";
-@import "__cell-head/_comparison__cell-head";
-@import "__table/_comparison__table";
