@@ -1,5 +1,6 @@
 .comparison__table {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(8, auto);
   border-right: 1px solid $dark-gray;
   border-bottom: 1px solid $dark-gray;

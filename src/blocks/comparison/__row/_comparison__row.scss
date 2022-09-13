@@ -1,4 +1,7 @@
-.advertisements {
+.comparison__row {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -36,6 +39,3 @@
     }
 }
 
-@import "__item/_advertisements__item";
-@import "__text/_advertisements__text";
-@import "__list/_advertisements__list";
