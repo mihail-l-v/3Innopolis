@@ -1,4 +1,6 @@
-.advertisements {
+.price-menu__button {
+  margin-top: 15px;
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -36,6 +38,3 @@
     }
 }
 
-@import "__list/_advertisements__list";
-@import "__item/_advertisements__item";
-@import "__text/_advertisements__text";
