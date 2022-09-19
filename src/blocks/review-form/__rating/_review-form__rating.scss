@@ -1,6 +1,15 @@
-.reviews__add-review_hover:hover {
-  background-color: $light-gray;
+.review-form__rating {
+  padding: 15px 20px;
+  border: 1px solid $dark-gray;
+  appearance: none;
+  -moz-appearance:textfield;
 
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-gray;
+  }
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -38,3 +47,4 @@
     }
 }
 
+@import "_hover/_review-form__rating_hover";

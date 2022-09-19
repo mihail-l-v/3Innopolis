@@ -1,11 +1,9 @@
-.price-menu {
-  padding: 20px;
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  margin-bottom: 40px;
-  width: 420px;
-
+.review-form__rating_hover {
+  &:hover,
+  &:focus {
+    border: 1px solid $black;
+    outline: none;
+  }
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -43,8 +41,3 @@
     }
 }
 
-@import "__delivery-bold/_price-menu__delivery-bold";
-@import "__button/_price-menu__button";
-@import "__discont/_price-menu__discont";
-@import "__old-price/_price-menu__old-price";
-@import "__price/_price-menu__price";

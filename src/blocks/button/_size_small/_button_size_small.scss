@@ -1,12 +1,9 @@
-.reviews__add-review {
-  padding: 10px 20px;
-  background-color: inherit;
+.button_size_small {
+  width: 177px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   line-height: 19px;
-  border: 1px solid $dark-gray;
-  border-radius: 4px;
-  cursor: pointer;
-
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -44,4 +41,3 @@
     }
 }
 
-@import "_hover/_reviews__add-review_hover";

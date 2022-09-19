@@ -1,10 +1,5 @@
-.price-menu {
-  padding: 20px;
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  margin-bottom: 40px;
-  width: 420px;
+.review-form {
+  max-width: 880px;
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -43,8 +38,10 @@
     }
 }
 
-@import "__delivery-bold/_price-menu__delivery-bold";
-@import "__button/_price-menu__button";
-@import "__discont/_price-menu__discont";
-@import "__old-price/_price-menu__old-price";
-@import "__price/_price-menu__price";
+@import "__button/_review-form__button";
+@import "__name/_review-form__name";
+@import "__title/_review-form__title";
+@import "__wrapper/_review-form__wrapper";
+@import "__form-wrapper/_review-form__form-wrapper";
+@import "__rating/_review-form__rating";
+@import "__text-review/_review-form__text-review";
