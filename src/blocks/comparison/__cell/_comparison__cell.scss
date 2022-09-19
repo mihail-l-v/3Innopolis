@@ -1,8 +1,6 @@
-.comparison__cell-head {
-  font-weight: 700;
-  text-align: center;
-  border-top: 1px solid $dark-gray;
-  border-bottom: 1px solid $dark-gray;
+.comparison__cell {
+  border-left: 1px solid $dark-gray;
+  padding: 10px;
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -41,3 +39,4 @@
     }
 }
 
+@import "_hover/_comparison__cell_hover";
