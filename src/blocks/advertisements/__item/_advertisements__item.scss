@@ -1,5 +1,7 @@
 .advertisements__item {
   border: 1px dashed $light-gray;
+  width: 100%;
+  height: 300px;
 
     @media screen and (max-width: $q-hd-screen) {
     }

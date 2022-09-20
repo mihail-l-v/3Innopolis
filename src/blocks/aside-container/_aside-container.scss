@@ -1,5 +1,5 @@
 .aside-container {
-  width: 420px;
+  min-width: 420px;
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -19,6 +19,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      min-width: 360px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
