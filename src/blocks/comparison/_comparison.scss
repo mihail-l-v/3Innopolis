@@ -12,13 +12,13 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      display: none;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      display: none;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

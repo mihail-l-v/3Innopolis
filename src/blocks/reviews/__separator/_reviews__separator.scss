@@ -16,13 +16,13 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      width: 464px;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      width: 464px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
