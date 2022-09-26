@@ -5,6 +5,14 @@
   cursor: pointer;
   border-radius: 4px;
 
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &:active {
+    outline: 2px solid $darkest-carrot;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -43,4 +51,3 @@
 }
 
 @import "_current/_inner-memory__item_current";
-@import "_hover/_inner-memory__item_hover";

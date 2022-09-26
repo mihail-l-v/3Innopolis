@@ -1,6 +1,4 @@
-.footer__top-link_hover:hover {
-  color:  $carrot;
-
+.price-menu__favorites-img {
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -38,3 +36,4 @@
     }
 }
 
+@import "_hover/_price-menu__favorites-img_hover";

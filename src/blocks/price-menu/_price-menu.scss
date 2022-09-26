@@ -42,8 +42,13 @@
     }
 }
 
+
+@import "__favorites-img/_price-menu__favorites-img";
+@import "__button-wrapper/_price-menu__button-wrapper";
 @import "__old-price/_price-menu__old-price";
-@import "__discont/_price-menu__discont";
+@import "__wrapper/_price-menu__wrapper";
 @import "__delivery-bold/_price-menu__delivery-bold";
-@import "__price/_price-menu__price";
+@import "__discont/_price-menu__discont";
+@import "__favorites-button/_price-menu__favorites-button";
 @import "__button/_price-menu__button";
+@import "__price/_price-menu__price";
