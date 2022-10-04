@@ -14,6 +14,8 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      width: 100px;
+      height: 100px;
     }
 
     @media screen and (max-width: $ready-hd-screen) {

@@ -12,6 +12,7 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      display: none;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
@@ -36,8 +37,8 @@
     }
 }
 
-@import "__table/_comparison__table";
 @import "__cell/_comparison__cell";
 @import "__title/_comparison__title";
+@import "__table/_comparison__table";
 @import "__cell-head/_comparison__cell-head";
 @import "__row/_comparison__row";

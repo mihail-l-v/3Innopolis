@@ -1,11 +1,4 @@
-.review-form__title {
-  margin-bottom: 15px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  color: $black;
-
+.appearance__item {
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -19,6 +12,7 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      height: 272px;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
