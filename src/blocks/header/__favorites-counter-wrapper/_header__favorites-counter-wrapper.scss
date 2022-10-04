@@ -1,5 +1,19 @@
-.review-form {
-  max-width: 880px;
+.header__favorites-counter-wrapper {
+  position: absolute;
+  background-color: $carrot;
+  padding: 3px 5px;
+  min-width: 24px;
+  border-radius: 50%;
+  color: $white;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    background-color: $darkest-carrot;
+  }
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -38,10 +52,3 @@
     }
 }
 
-@import "__button/_review-form__button";
-@import "__wrapper/_review-form__wrapper";
-@import "__rating/_review-form__rating";
-@import "__text-review/_review-form__text-review";
-@import "__name/_review-form__name";
-@import "__title/_review-form__title";
-@import "__form-wrapper/_review-form__form-wrapper";

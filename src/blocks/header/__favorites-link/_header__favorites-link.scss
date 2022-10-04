@@ -1,5 +1,15 @@
-.review-form {
-  max-width: 880px;
+.header__favorites-link {
+  & svg {
+    fill: $dark-gray;
+  }
+
+  &:hover svg {
+    fill: $carrot;
+  }
+
+  &:active svg {
+    fill: $darkest-carrot;
+  }
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -38,10 +48,3 @@
     }
 }
 
-@import "__button/_review-form__button";
-@import "__wrapper/_review-form__wrapper";
-@import "__rating/_review-form__rating";
-@import "__text-review/_review-form__text-review";
-@import "__name/_review-form__name";
-@import "__title/_review-form__title";
-@import "__form-wrapper/_review-form__form-wrapper";

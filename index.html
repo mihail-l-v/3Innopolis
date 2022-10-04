@@ -12,9 +12,34 @@
 <body class="page-body">
   <div class="page-body__container">
     <div id="top"></div>
+
     <header class="header">
-      <a class="header__logo" href="index.html"><img src="img/main-logo.png" alt="Логотип сайта"></a>
-      <h1 class="header__title"><span class="header__title-decoration">Мой</span>Маркет</h1>
+      <div class="header__logo-wrapper">
+        <a class="header__logo" href="index.html"><img src="img/main-logo.png" alt="Логотип сайта"></a>
+        <h1 class="header__title"><span class="header__title-decoration">Мой</span>Маркет</h1>
+      </div>
+      <div class="header__menu-wrapper">
+        <div class="header__favorites">
+          <a class="header__favorites-link" href="#">
+            <svg class="header__favorites-img" width="43" height="35" alt="Избранное">
+              <use xlink:href="img/sprite.svg#favorites-img"></use>
+            </svg>
+            <div class="header__favorites-counter-wrapper">
+              <span class="header__favorites-counter">12</span>
+            </div>
+          </a>
+        </div>
+        <div class="header__basket">
+          <a class="header__basket-link" href="#">
+            <svg class="header__basket-img" width="41" height="39" alt="Корзина">
+              <use xlink:href="img/sprite.svg#basket-img"></use>
+            </svg>
+            <div class="header__basket-counter-wrapper">
+              <span class="header__basket-counter">3</span>
+            </div>
+          </a>
+        </div>
+      </div>
     </header>
 
     <nav class="navigation">
