@@ -1,6 +1,15 @@
 .characteristics__item-link {
   color: $aqua;
   text-decoration: none;
+
+  &:hover {
+    color: $carrot;
+  }
+
+  &:active {
+    color: $darkest-carrot;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -38,4 +47,3 @@
     }
 }
 
-@import "_hover/_characteristics__item-link_hover";

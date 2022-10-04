@@ -18,10 +18,10 @@
     </header>
 
     <nav class="navigation">
-      <a class="navigation__item navigation__item_hover" href="#">Электроника</a> >
-      <a class="navigation__item navigation__item_hover" href="#">Смартфоны и гаджеты</a> >
-      <a class="navigation__item navigation__item_hover" href="#">Мобильные телефоны</a> >
-      <a class="navigation__item navigation__item_hover" href="#">Apple</a>
+      <a class="navigation__item" href="#">Электроника</a> >
+      <a class="navigation__item" href="#">Смартфоны и гаджеты</a> >
+      <a class="navigation__item" href="#">Мобильные телефоны</a> >
+      <a class="navigation__item" href="#">Apple</a>
     </nav>
 
     <h2 class="product-title">Смартфон Apple iPhone 13, синий</h2>
@@ -41,22 +41,22 @@
           <section class="product-color">
             <h3 class="product-color__title">Цвет товара: Синий</h3>
             <div class="product-color__list">
-              <picture class="product-color__picture product-color__picture_hover">
+              <picture class="product-color__picture">
                 <img class="product-color__item" src="img/color-1.webp" height="60" alt="Красный цвет">
               </picture>
-              <picture class="product-color__picture product-color__picture_hover">
+              <picture class="product-color__picture">
                 <img class="product-color__item" src="img/color-2.webp" height="60" alt="Зеленый цвет">
               </picture>
-              <picture class="product-color__picture product-color__picture_hover">
+              <picture class="product-color__picture">
                 <img class="product-color__item" src="img/color-3.webp" height="60" alt="Розовый цвет">
               </picture>
-              <picture class="product-color__picture product-color__picture_hover product-color__picture_current">
+              <picture class="product-color__picture product-color__picture_current">
                 <img class="product-color__item" src="img/color-4.webp" height="60" alt="Синий цвет">
               </picture>
-              <picture class="product-color__picture product-color__picture_hover">
+              <picture class="product-color__picture">
                 <img class="product-color__item" src="img/color-5.webp" height="60" alt="Белый цвет">
               </picture>
-              <picture class="product-color__picture product-color__picture_hover">
+              <picture class="product-color__picture">
                 <img class="product-color__item" src="img/color-6.webp" height="60" alt="Черный цвет">
               </picture>
             </div>
@@ -65,9 +65,9 @@
           <section class="inner-memory">
             <h3 class="inner-memory__title">Конфигурация памяти: 128 ГБ</h3>
             <div class="inner-memory__list">
-              <button class="inner-memory__item inner-memory__item_hover inner-memory__item_current" type="button">128 ГБ</button>
-              <button class="inner-memory__item inner-memory__item_hover" type="button">256 ГБ</button>
-              <button class="inner-memory__item inner-memory__item_hover" type="button">512 ГБ</button>
+              <button class="inner-memory__item inner-memory__item_current" type="button">128 ГБ</button>
+              <button class="inner-memory__item" type="button">256 ГБ</button>
+              <button class="inner-memory__item" type="button">512 ГБ</button>
             </div>
           </section>
 
@@ -78,7 +78,7 @@
               <li class="characteristics__item">Встроенная память: <b>128 ГБ</b></li>
               <li class="characteristics__item">Операционная система: <b>iOS 15</b></li>
               <li class="characteristics__item">Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-              <li class="characteristics__item">Процессор:<b><a class="characteristics__item-link characteristics__item-link_hover" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></b></li>
+              <li class="characteristics__item">Процессор:<b><a class="characteristics__item-link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></b></li>
               <li class="characteristics__item">Вес: <b>173 г</b></li>
             </ul>
           </section>
@@ -149,12 +149,22 @@
         <div class="aside-container">
 
           <div class="price-menu">
-            <span class="price-menu__old-price">75 990₽</span> <span class="price-menu__discont">-8%</span>
+            <div class="price-menu__wrapper">
+              <div class="price-menu__discont-wrapper">
+                <span class="price-menu__old-price">75 990₽</span>
+                <span class="price-menu__discont">-8%</span>
+              </div>
+              <button class="price-menu__favorites-button" type="button">
+                <svg class="price-menu__favorites-img" width="26" height="20" alt="Добавить в избранное">
+                  <use xlink:href="img/sprite.svg#favorites-img"></use>
+                </svg>
+              </button>
+            </div>
             <h3 class="price-menu__price">67 990₽</h3>
             <p class="price-menu__delivery">Самовывоз в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
             <p class="price-menu__delivery">Курьером в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
-            <p class="price-menu__button">
-              <button class="price-menu__button button button_hover" type="button">Добавить в корзину</button>
+            <p class="price-menu__button-wrapper">
+              <button class="price-menu__button button" type="button">Добавить в корзину</button>
             </p>
           </div>
 
@@ -240,7 +250,7 @@
               <input class="review-form__rating review-form__rating_hover" type="number" name="rating" min="1" max="5" step="1" placeholder="Оценка">
               <textarea class="review-form__text-review review-form__text-review_hover" name="text-review" placeholder="Текст отзыва"></textarea>
             </div>
-            <button class="review-form__button button button_size_small button_hover" type="button">Отправить отзыв</button>
+            <button class="review-form__button button button_size_small button_hover button_active" type="button">Отправить отзыв</button>
           </form>
         </div>
       </section>

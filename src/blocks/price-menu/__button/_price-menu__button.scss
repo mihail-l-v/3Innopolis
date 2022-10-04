@@ -1,5 +1,16 @@
 .price-menu__button {
-  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/busket.svg");
+    background-repeat: no-repeat;
+  }
 
     @media screen and (max-width: $q-hd-screen) {
     }

@@ -9,6 +9,15 @@
   font-size: 20px;
   line-height: 24px;
   border-radius: 4px;
+
+  &:hover {
+    background-color: $dark-carrot;
+  }
+
+  &:active {
+    background-color: $darkest-carrot;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -47,4 +56,3 @@
 }
 
 @import "_size_small/_button_size_small";
-@import "_hover/_button_hover";

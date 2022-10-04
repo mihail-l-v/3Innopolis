@@ -9,6 +9,14 @@
   align-items: center;
   cursor: pointer;
 
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &:active {
+    outline: 2px solid $darkest-carrot;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -47,4 +55,3 @@
 }
 
 @import "_current/_product-color__picture_current";
-@import "_hover/_product-color__picture_hover";

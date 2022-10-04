@@ -1,5 +1,20 @@
-.product-color__picture_hover:hover {
-  background-color: $light-gray;
+.price-menu__favorites-button {
+  padding: 5px 2px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  & svg {
+    fill: $dark-gray;
+  }
+
+  &:hover svg {
+    fill: $carrot;
+  }
+
+  &:active svg {
+    fill: $darkest-carrot;
+  }
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -37,4 +52,3 @@
     @media screen and (max-width: $small-phone-screen) {
     }
 }
-

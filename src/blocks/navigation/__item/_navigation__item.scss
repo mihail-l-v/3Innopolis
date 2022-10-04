@@ -2,6 +2,14 @@
   color: $aqua;
   text-decoration: none;
 
+  &:hover {
+    color: $carrot;
+  }
+
+  &:active {
+    color: $darkest-carrot;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -39,4 +47,4 @@
     }
 }
 
-@import "_hover/_navigation__item_hover";
+
