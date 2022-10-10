@@ -44,12 +44,12 @@
     }
 }
 
-@import "__menu-wrapper/_header__menu-wrapper";
-@import "__basket-counter-wrapper/_header__basket-counter-wrapper";
+@import "__favorites-link/_header__favorites-link";
 @import "__logo-wrapper/_header__logo-wrapper";
-@import "__favorites/_header__favorites";
-@import "__favorites-counter-wrapper/_header__favorites-counter-wrapper";
+@import "__basket-link/_header__basket-link";
 @import "__basket/_header__basket";
 @import "__title-decoration/_header__title-decoration";
-@import "__favorites-link/_header__favorites-link";
-@import "__basket-link/_header__basket-link";
+@import "__favorites/_header__favorites";
+@import "__favorites-counter-wrapper/_header__favorites-counter-wrapper";
+@import "__basket-counter-wrapper/_header__basket-counter-wrapper";
+@import "__menu-wrapper/_header__menu-wrapper";
