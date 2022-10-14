@@ -1,6 +1,17 @@
-.review {
-  display: flex;
-  gap: 30px;
+.characteristics__item {
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: $dark-gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    left: 0;
+  }
 
     @media screen and (max-width: $q-hd-screen) {
     }
@@ -39,10 +50,3 @@
     }
 }
 
-@import "__autor/_review__autor";
-@import "__detail-title/_review__detail-title";
-@import "__rating-img/_review__rating-img";
-@import "__detail/_review__detail";
-@import "__avatar-img/_review__avatar-img";
-@import "__rating/_review__rating";
-@import "__details/_review__details";
