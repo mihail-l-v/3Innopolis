@@ -13,6 +13,17 @@ const product_iphone13 = {
   price: 67990,
   oldPrice: 75990,
   discont: 8,
+  linksImage: ['img/image-1.webp', 'img/image-2.webp', 'img/image-3.webp', 'img/image-4.webp', 'img/image-5.webp',],
+  colors: ['Красный', 'Зеленый', 'Розовый', 'Синий', 'Белый', 'Черный',],
+  innerMemory: [128, 256, 512,],
+  delivery: [
+    {name: 'Самовывоз',
+    data: 'четверг, 1 сентября',
+    cost: 0,},
+    {name: 'Курьером',
+    data: 'четверг, 1 сентября',
+    cost: 0,},
+  ],
 }
 
 const review_1 = {
