@@ -3,6 +3,7 @@
   border: 1px solid $dark-gray;
   appearance: none;
   -moz-appearance:textfield;
+  width: 100%;
 
   &::placeholder {
     font-weight: 500;
