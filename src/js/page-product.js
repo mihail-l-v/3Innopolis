@@ -11,8 +11,14 @@ const errorRatingElem = form.querySelector('.review-form__rating-error');
 
 const inputReview = form.querySelector('.review-form__text-review');
 
-let hidenCart = document.querySelector('.header__basket-counter-wrapper_hiden-js');
 let imgCart = document.querySelector('.header__basket-counter-wrapper');
+let buttonCart = document.querySelector('.price-menu__button');
+let counterCart = document.querySelector('.header__basket-counter');
+
+let favoritesButton = document.querySelector('.price-menu__favorites-button');
+let counterFavorites = document.querySelector('.header__favorites-counter');
+let imgFavorites= document.querySelector('.header__favorites-counter-wrapper');
+let imgFavoritesAdd = document.querySelector('.price-menu__favorites-img-svg');
 
 
 function handleSubmit(event) {
@@ -59,8 +65,16 @@ function init() {
   inputReview.value = localStorage.getItem('text-review');
   counterCart.innerText = localStorage.getItem('summCart');
 
-  if (localStorage.getItem('summCart') !== '0') {
+  if (+localStorage.getItem('summCart') > 0) {
     imgCart.classList.remove('header__basket-counter-wrapper_hiden-js');
+    buttonCart.style.backgroundColor = '#888888';
+    buttonCart.innerText = `Товар уже в корзине`;
+  }
+
+  if (localStorage.getItem('summFavorites') == '1') {
+    imgFavorites.classList.remove('header__favorites-counter-wrapper_hiden-js');
+    counterFavorites.innerText = 1;
+    imgFavoritesAdd.setAttribute('xlink:href', 'img/sprite.svg#favorites-img-add');
   }
 }
 
@@ -79,7 +93,6 @@ inputRating.addEventListener('input', handleInput);
 inputReview.addEventListener('input', handleInput);
 
 let addToCartButton = document.querySelector('.button__addCart');
-let counterCart = document.querySelector('.header__basket-counter');
 
 addToCartButton.addEventListener('click', handleCart);
 
@@ -88,13 +101,11 @@ addToCartButton.addEventListener('click', handleCart);
 // возмем id товара из базы
 const idProduct = 123;
 //возмем данные покупателя из базы
-localStorage.setItem('user', JSON.stringify({arrayCart: []}));
+localStorage.setItem('user', JSON.stringify({arrayCart: [], favorites: []}));
 
-let buttonCart = document.querySelector('.price-menu__button');
-let objectCart = JSON.parse(localStorage.getItem('user'));
-let arrayCart = objectCart.arrayCart;
-
-///
+let objectUser = JSON.parse(localStorage.getItem('user'));
+let arrayCart = objectUser.arrayCart;
+let arrayFavorites = objectUser.favorites;
 
 function handleCart() {
   if (arrayCart.includes(idProduct)) {
@@ -113,5 +124,25 @@ function handleCart() {
     buttonCart.innerText = `Товар уже в корзине`;
     buttonCart.style.backgroundColor = '#888888';
     imgCart.classList.remove('header__basket-counter-wrapper_hiden-js');
+  }
+}
+
+favoritesButton.addEventListener('click', handleFavorites);
+
+function handleFavorites() {
+  if (arrayFavorites.includes(idProduct)) {
+    arrayFavorites = arrayFavorites.filter(item => item !== idProduct);
+    let countFavorites = arrayFavorites.length;
+    counterFavorites.innerText = countFavorites;
+    localStorage.setItem('summFavorites', '0');
+    imgFavorites.classList.add('header__favorites-counter-wrapper_hiden-js');
+    imgFavoritesAdd.setAttribute('xlink:href', 'img/sprite.svg#favorites-img');
+  } else {
+    arrayFavorites.push(idProduct);
+    let countFavorites = arrayFavorites.length;
+    localStorage.setItem('summFavorites', '1');
+    counterFavorites.innerText = countFavorites;
+    imgFavorites.classList.remove('header__favorites-counter-wrapper_hiden-js');
+    imgFavoritesAdd.setAttribute('xlink:href', 'img/sprite.svg#favorites-img-add');
   }
 }
