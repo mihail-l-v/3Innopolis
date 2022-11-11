@@ -24,8 +24,8 @@
             <svg class="header__favorites-img" width="43" height="35" alt="Избранное">
               <use xlink:href="img/sprite.svg#favorites-img"></use>
             </svg>
-            <div class="header__favorites-counter-wrapper">
-              <span class="header__favorites-counter">12</span>
+            <div class="header__favorites-counter-wrapper header__favorites-counter-wrapper_hiden-js">
+              <span class="header__favorites-counter">0</span>
             </div>
           </a>
         </div>
@@ -34,8 +34,8 @@
             <svg class="header__basket-img" width="41" height="39" alt="Корзина">
               <use xlink:href="img/sprite.svg#basket-img"></use>
             </svg>
-            <div class="header__basket-counter-wrapper">
-              <span class="header__basket-counter">3</span>
+            <div class="header__basket-counter-wrapper header__basket-counter-wrapper_hiden-js">
+              <span class="header__basket-counter">0</span>
             </div>
           </a>
         </div>
@@ -181,7 +181,7 @@
               </div>
               <button class="price-menu__favorites-button" type="button">
                 <svg class="price-menu__favorites-img" width="26" height="20" alt="Добавить в избранное">
-                  <use xlink:href="img/sprite.svg#favorites-img"></use>
+                  <use class="price-menu__favorites-img-svg" xlink:href="img/sprite.svg#favorites-img"></use>
                 </svg>
               </button>
             </div>
@@ -189,7 +189,7 @@
             <p class="price-menu__delivery">Самовывоз в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
             <p class="price-menu__delivery">Курьером в четверг, 1 сентября — <span class="price-menu__delivery-bold">бесплатно</span></p>
             <p class="price-menu__button-wrapper">
-              <button class="price-menu__button button" type="button">Добавить в корзину</button>
+              <button class="price-menu__button button button__addCart" type="button">Добавить в корзину</button>
             </p>
           </div>
 
@@ -306,7 +306,7 @@
     </div><!-- footer__container -->
   </footer>
   <!-- <script src="./src/js/homework23.js"></script> -->
-  <script src="./src/js/page-product-oop.js"></script>
+  <script src="./src/js/page-product.js"></script>
   <script src="./src/js/data.js"></script>
 </body>
 </html>
