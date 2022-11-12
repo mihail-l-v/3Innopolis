@@ -22,6 +22,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      margin-top: 40px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
@@ -40,8 +41,8 @@
     }
 }
 
-@import "__container/_footer__container";
-@import "__copyright-link/_footer__copyright-link";
 @import "__title-decoration/_footer__title-decoration";
 @import "__title/_footer__title";
+@import "__copyright-link/_footer__copyright-link";
 @import "__top-link/_footer__top-link";
+@import "__container/_footer__container";

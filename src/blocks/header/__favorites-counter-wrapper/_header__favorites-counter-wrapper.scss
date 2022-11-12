@@ -3,6 +3,7 @@
   background-color: $carrot;
   padding: 3px 5px;
   min-width: 24px;
+  min-height: 24px;
   border-radius: 50%;
   color: $white;
   top: 0;
@@ -34,6 +35,8 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      min-width: 10px;
+      min-height: 10px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

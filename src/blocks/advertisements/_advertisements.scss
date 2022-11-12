@@ -18,6 +18,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      display: none;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
@@ -36,6 +37,6 @@
     }
 }
 
-@import "__text/_advertisements__text";
 @import "__list/_advertisements__list";
+@import "__text/_advertisements__text";
 @import "__item/_advertisements__item";

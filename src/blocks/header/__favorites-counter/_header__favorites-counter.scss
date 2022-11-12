@@ -1,7 +1,4 @@
-.inner-memory__title {
-  margin-bottom: 15px;
-  font-size: 16px;
-
+.header__favorites-counter {
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -21,7 +18,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 14px;
+      display: none;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

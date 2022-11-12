@@ -1,7 +1,4 @@
-.inner-memory__title {
-  margin-bottom: 15px;
-  font-size: 16px;
-
+.product-color__item {
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -21,7 +18,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 14px;
+      height: 50px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

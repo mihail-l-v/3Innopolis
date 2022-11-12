@@ -38,13 +38,13 @@
     }
 }
 
+@import "__rating-error/_review-form__rating-error";
 @import "__name-error/_review-form__name-error";
-@import "__rating/_review-form__rating";
+@import "__wrapper/_review-form__wrapper";
+@import "__form-wrapper-input/_review-form__form-wrapper-input";
 @import "__form-wrapper/_review-form__form-wrapper";
 @import "__text-review/_review-form__text-review";
-@import "__rating-error/_review-form__rating-error";
 @import "__title/_review-form__title";
-@import "__wrapper/_review-form__wrapper";
-@import "__name/_review-form__name";
+@import "__rating/_review-form__rating";
 @import "__button/_review-form__button";
-@import "__form-wrapper-input/_review-form__form-wrapper-input";
+@import "__name/_review-form__name";

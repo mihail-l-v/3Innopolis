@@ -1,7 +1,5 @@
-.inner-memory__title {
-  margin-bottom: 15px;
-  font-size: 16px;
-
+.header__title {
+  font-size: 44px;
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -21,7 +19,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 14px;
+      font-size: 34px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

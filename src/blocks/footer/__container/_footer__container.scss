@@ -25,6 +25,10 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px 10px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

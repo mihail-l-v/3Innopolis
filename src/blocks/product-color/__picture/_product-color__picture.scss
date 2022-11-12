@@ -36,6 +36,8 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      width: 60px;
+      height: 60px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
