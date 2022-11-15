@@ -1,0 +1,48 @@
+.review {
+  display: flex;
+  gap: 30px;
+
+    @media screen and (max-width: $q-hd-screen) {
+    }
+
+    @media screen and (max-width: $high-hd-screen) {
+    }
+
+    @media screen and (max-width: $full-hd-screen) {
+    }
+
+    @media screen and (max-width: $dell-hd-screen) {
+    }
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $ready-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+    }
+
+    @media screen and (max-width: $middle-tablet-screen) {
+    }
+
+    @media screen and (max-width: $small-tablet-screen) {
+    }
+
+    @media screen and (max-width: $big-phone-screen) {
+    }
+
+    @media screen and (max-width: $middle-phone-screen) {
+    }
+
+    @media screen and (max-width: $small-phone-screen) {
+    }
+}
+
+@import "__rating/_review__rating";
+@import "__rating-img/_review__rating-img";
+@import "__detail-title/_review__detail-title";
+@import "__avatar-img/_review__avatar-img";
+@import "__autor/_review__autor";
+@import "__details/_review__details";
+@import "__detail/_review__detail";

@@ -1,0 +1,50 @@
+.review-form {
+  max-width: 880px;
+
+    @media screen and (max-width: $q-hd-screen) {
+    }
+
+    @media screen and (max-width: $high-hd-screen) {
+    }
+
+    @media screen and (max-width: $full-hd-screen) {
+    }
+
+    @media screen and (max-width: $dell-hd-screen) {
+    }
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $ready-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+    }
+
+    @media screen and (max-width: $middle-tablet-screen) {
+    }
+
+    @media screen and (max-width: $small-tablet-screen) {
+    }
+
+    @media screen and (max-width: $big-phone-screen) {
+    }
+
+    @media screen and (max-width: $middle-phone-screen) {
+    }
+
+    @media screen and (max-width: $small-phone-screen) {
+    }
+}
+
+@import "__rating-error/_review-form__rating-error";
+@import "__name-error/_review-form__name-error";
+@import "__wrapper/_review-form__wrapper";
+@import "__form-wrapper-input/_review-form__form-wrapper-input";
+@import "__form-wrapper/_review-form__form-wrapper";
+@import "__text-review/_review-form__text-review";
+@import "__title/_review-form__title";
+@import "__rating/_review-form__rating";
+@import "__button/_review-form__button";
+@import "__name/_review-form__name";
