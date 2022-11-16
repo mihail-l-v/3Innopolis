@@ -3,6 +3,10 @@
   align-self: flex-end;
   width: 710px;
 
+  &:first-child {
+    display: none;
+  }
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
