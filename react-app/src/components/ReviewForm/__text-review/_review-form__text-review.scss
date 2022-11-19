@@ -1,0 +1,51 @@
+.review-form__text-review {
+  grid-column: 1 / -1;
+  height: 190px;
+  resize: none;
+  padding: 15px  20px;
+  border: 1px solid $dark-gray;
+
+  &::placeholder {
+    color: $dark-gray;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+    @media screen and (max-width: $q-hd-screen) {
+    }
+
+    @media screen and (max-width: $high-hd-screen) {
+    }
+
+    @media screen and (max-width: $full-hd-screen) {
+    }
+
+    @media screen and (max-width: $dell-hd-screen) {
+    }
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $ready-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+    }
+
+    @media screen and (max-width: $middle-tablet-screen) {
+    }
+
+    @media screen and (max-width: $small-tablet-screen) {
+    }
+
+    @media screen and (max-width: $big-phone-screen) {
+    }
+
+    @media screen and (max-width: $middle-phone-screen) {
+    }
+
+    @media screen and (max-width: $small-phone-screen) {
+    }
+}
+
+@import "_hover/_review-form__text-review_hover";

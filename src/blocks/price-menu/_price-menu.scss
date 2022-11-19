@@ -24,6 +24,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
+      margin-bottom: 0;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
@@ -43,12 +44,12 @@
 }
 
 
-@import "__button-wrapper/_price-menu__button-wrapper";
-@import "__wrapper/_price-menu__wrapper";
-@import "__discont/_price-menu__discont";
-@import "__old-price/_price-menu__old-price";
-@import "__button/_price-menu__button";
-@import "__price/_price-menu__price";
 @import "__favorites-img/_price-menu__favorites-img";
 @import "__favorites-button/_price-menu__favorites-button";
+@import "__wrapper/_price-menu__wrapper";
+@import "__price/_price-menu__price";
+@import "__discont/_price-menu__discont";
 @import "__delivery-bold/_price-menu__delivery-bold";
+@import "__old-price/_price-menu__old-price";
+@import "__button-wrapper/_price-menu__button-wrapper";
+@import "__button/_price-menu__button";
