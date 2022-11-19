@@ -1,18 +1,36 @@
 import './Appearance.scss';
-import AppearanceItem from './__item/AppearanceItem';
-import AppearanceItem2 from './__item2/AppearanceItem';
-import AppearanceItem3 from './__item3/AppearanceItem';
-import AppearanceItem4 from './__item4/AppearanceItem';
-import AppearanceItem5 from './__item5/AppearanceItem';
+
+let images = [
+  {
+    url:  './img/image-1.webp',
+    alt: 'Вид Apple iPhone 13 спереди и сзади',
+  },
+  {
+    url:  './img/image-2.webp',
+    alt: 'Фронтальный вид Apple iPhone 13',
+  },
+  {
+    url:  './img/image-3.webp',
+    alt: 'Вид сбоку Apple iPhone 13',
+  },
+  {
+    url:  './img/image-4.webp',
+    alt: 'Камера Apple iPhone 13',
+  },
+  {
+    url:  './img/image-5.webp',
+    alt: 'Вид Apple iPhone 13 сзади',
+  },
+];
 
 function Appearance() {
   return (
     <section className="appearance">
-      <AppearanceItem />
-      <AppearanceItem2 />
-      <AppearanceItem3 />
-      <AppearanceItem4 />
-      <AppearanceItem5 />
+      {images.map((image, index) => {
+        return (
+          <img class="appearance__item" src={image.url} height="387" alt={image.alt} key={index} />
+        );
+      })}
     </section>
   );
 }
