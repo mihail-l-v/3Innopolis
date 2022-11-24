@@ -1,8 +1,9 @@
 import './_reviews.scss';
-import './_review.scss';
+import Review from '../Review/Review';
 
 const reviews = [
   {
+    id: 0,
     nameAutor: 'Марк Г.',
     avatar: 'https://thispersondoesnotexist.com/image',
     reviewRating: './img/star-5.svg',
@@ -11,6 +12,7 @@ const reviews = [
     reviewFlaw: `к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное `,
   },
   {
+    id: 1,
     nameAutor: 'Валерий Коваленко',
     avatar: 'https://thispersondoesnotexist.com/image',
     reviewRating: './img/star-4.svg',
@@ -22,44 +24,17 @@ const reviews = [
 
 function Reviews() {
   return (
-    <section class="reviews">
-      <div class="reviews__header">
-        <div class="reviews__wrapper">
-          <h3 class="reviews__title">Отзывы</h3>
-          <span class="reviews__amount">425</span>
+    <section className="reviews">
+      <div className="reviews__header">
+        <div className="reviews__wrapper">
+          <h3 className="reviews__title">Отзывы</h3>
+          <span className="reviews__amount">425</span>
         </div>
       </div>
-      <div class="reviews__list">
+      <div className="reviews__list">
         {reviews.map((review) => {
           return (
-            <>
-              <div class="reviews__separator"></div>
-
-              <div class="reviews__item review">
-                <div class="review__avatar">
-                  <img class="review__avatar-img" src="https://thispersondoesnotexist.com/image" height="140" width="140" alt="Аватар автора" />
-                </div>
-                <div class="review__wrapper">
-                  <p class="review__autor">{review.nameAutor}</p>
-                  <div class="review__rating">
-                    <img class="review__rating-img" src={review.reviewRating} height="30" alt="Оценка товара" />
-                  </div>
-                  <div class="review__details">
-                    <p class="review__detail">
-                      <span class="review__detail-title">Опыт использования:</span> {review.experience}
-                    </p>
-                    <p class="review__detail">
-                      <span class="review__detail-title">Достоинства:</span> <br />
-                      {review.reviewAdvantag}
-                    </p>
-                    <p class="review__detail">
-                      <span class="review__detail-title">Недостатки:</span> <br />
-                      {review.reviewFlaw}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </>
+            <Review key={review.id} review={review} />
           );
         })}
       </div>

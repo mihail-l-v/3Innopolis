@@ -1,4 +1,4 @@
-import './Appearance.scss';
+import './_appearance.scss';
 
 let images = [
   {
@@ -28,7 +28,7 @@ function Appearance() {
     <section className="appearance">
       {images.map((image, index) => {
         return (
-          <img class="appearance__item" src={image.url} height="387" alt={image.alt} key={index} />
+          <img className="appearance__item" src={image.url} height="387" alt={image.alt} key={index} />
         );
       })}
     </section>
