@@ -1,9 +1,12 @@
 import './HeaderTitle.scss';
+import {Link} from 'react-router-dom';
 import HeaderTitleDecoration from '../__title-decoration/HeaderTitleDecoration';
 
 function HeaderTitle() {
   return (
-    <h1 className="header__title"> <HeaderTitleDecoration />Маркет</h1>
+    <Link to='/' className="header__title">
+      <h1 className="header__title"> <HeaderTitleDecoration />Маркет</h1>
+    </Link>
   );
 }
 

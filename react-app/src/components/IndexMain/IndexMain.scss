@@ -1,0 +1,38 @@
+.main {
+  font-size: 16px;
+  line-height: normal;
+  color: $black;
+  margin: 0 auto;
+  width: 410px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $mac-hd-screen) {
+    }
+
+    @media screen and (max-width: $big-tablet-screen) {
+      font-size: 14px;
+      width: 270px;
+    }
+}
+
+.main__link-container {
+  margin-top: 20px;
+}
+
+.main__link {
+  color: $aqua;
+  text-decoration: none;
+
+  &:hover {
+    color: $carrot;
+  }
+
+  &:active {
+    color: $darkest-carrot;
+  }
+}
+
