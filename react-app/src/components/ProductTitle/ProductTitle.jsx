@@ -1,8 +1,8 @@
-import './ProductTitle.scss';
+import styles from './ProductTitle.module.css';
 
 function ProductTitle() {
   return (
-    <h2 className="product-title">Смартфон Apple iPhone 13, синий</h2>
+    <h2 className={styles.productTitle}>Смартфон Apple iPhone 13, синий</h2>
   );
 }
 

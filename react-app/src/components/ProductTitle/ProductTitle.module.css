@@ -1,6 +1,6 @@
-.product-color__title {
-  margin-bottom: 15px;
-  font-size: 16px;
+.productTitle {
+  margin-bottom: 30px;
+  font-size: 32px;
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 14px;
+      font-size: 24px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
