@@ -1,8 +1,16 @@
-import './ProductColorTitle.scss'
+import styled from "styled-components";
+
+const H3 = styled.h3`
+  margin-bottom: 15px;
+  font-size: 16px;
+  @media screen and (max-width: 1023px) {
+    font-size: 14px;
+  }
+`;
 
 function ProductColorTitle() {
   return (
-    <h3 className="product-color__title">Цвет товара: Синий</h3>
+    <H3>Цвет товара: Синий</H3>
   );
 }
 
