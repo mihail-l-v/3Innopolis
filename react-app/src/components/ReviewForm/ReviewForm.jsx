@@ -79,7 +79,7 @@ function ReviewForm() {
             </div>
             <textarea className="review-form__text-review review-form__text-review_hover" onChange={handleChangleReview} name="text-review" placeholder="Текст отзыва" value={formReview}></textarea>
           </div>
-          <button className="review-form__button button button_size_small" type="submit">Отправить отзыв</button>
+          <button className="review-form__button button button_size_small button__color" type="submit">Отправить отзыв</button>
         </form>
       </div>
     </section>
