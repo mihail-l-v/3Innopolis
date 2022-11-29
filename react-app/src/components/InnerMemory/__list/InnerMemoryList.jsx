@@ -1,16 +1,28 @@
+import React, {useState} from 'react';
 import './InnerMemoryList.scss';
 
-const memores = [128, 256, 512];
+const memores = [
+  { id: 0,
+    memory: 128},
+  { id: 1,
+    memory: 256},
+  { id: 2,
+    memory: 512},
+  ];
 
 function InnerMemoryList() {
-  const activeMemory = 0;
+
+  const [count, setCount] = useState(0);
+  const handleMemory = (e, id) => {setCount(id)};
+  const activeMemory = count;
+
   return (
     <div className="inner-memory__list">
-      {memores.map((memory, index) => {
+      {memores.map((memory, index, ...restProps) => {
         const actived = index === activeMemory;
         const CurrentClassName = actived ? 'product-color__picture_current' : '';
         return (
-          <button className={`inner-memory__item ${CurrentClassName}`} type="button" key={index}>{memory} ГБ</button>
+          <button className={`inner-memory__item ${CurrentClassName}`} {...restProps} onClick={(e) => {handleMemory(e, memory.id)}} type="button" key={memory.id}>{memory.memory} ГБ</button>
         );
 
       })}

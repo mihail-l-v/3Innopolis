@@ -83,7 +83,7 @@ function handleInput(event) {
   let name = event.target.getAttribute('name');
   console.log(name, value);
   localStorage.setItem(name, value);
-  console.log(localStorage.getItem(name));
+  console.log(`В локалСторадж - `, localStorage.getItem(name));
 }
 
 form.addEventListener('submit', handleSubmit);

@@ -1,17 +1,4 @@
-.price-menu__button {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background-image: url("./busket.svg");
-    background-repeat: no-repeat;
-  }
-
+.appearance__item {
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -25,6 +12,7 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      height: 272px;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
