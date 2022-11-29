@@ -1,7 +1,7 @@
-.header__title {
-  font-size: 44px;
-  color: $black;
-  text-decoration: none;
+.page-body {
+  font-size: 16px;
+  background-color: $background-color;
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -21,7 +21,7 @@
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 34px;
+      font-size: 14px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {

@@ -1,7 +1,9 @@
-.header__title {
-  font-size: 44px;
-  color: $black;
-  text-decoration: none;
+.page-body__container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  min-height: calc(100vh - 215px);
+
     @media screen and (max-width: $q-hd-screen) {
     }
 
@@ -15,13 +17,14 @@
     }
 
     @media screen and (max-width: $mac-hd-screen) {
+      max-width: 994px;
     }
 
     @media screen and (max-width: $ready-hd-screen) {
     }
 
     @media screen and (max-width: $big-tablet-screen) {
-      font-size: 34px;
+      max-width: 340px;
     }
 
     @media screen and (max-width: $middle-tablet-screen) {
