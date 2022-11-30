@@ -3,9 +3,9 @@ import './_review-form.scss';
 import './_button.scss';
 
 function ReviewForm() {
-  const [formName, setFormName] = useState(localStorage.getItem('user-name'));
-  const [formRating, setFormRating] = useState(localStorage.getItem('rating'));
-  const [formReview, setFormReview] = useState(localStorage.getItem('text-review'));
+  const [formName, setFormName] = useState(localStorage.getItem('user-name') || '');
+  const [formRating, setFormRating] = useState(localStorage.getItem('rating') || '');
+  const [formReview, setFormReview] = useState(localStorage.getItem('text-review') || '');
   const [errorName, setErrorName] = useState();
   const [errorRating, setErrorRating] = useState();
 

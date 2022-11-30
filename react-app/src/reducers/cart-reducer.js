@@ -5,7 +5,7 @@ export const cartSlice = createSlice({
 
   // начальное состояние хранилища
   initialState: {
-    products: [],
+    products: JSON.parse(localStorage.getItem('cart-products')) || [],
   },
 
   reducers: {
