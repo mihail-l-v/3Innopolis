@@ -61,6 +61,7 @@ function ReviewForm() {
     localStorage.removeItem('user-name');
     localStorage.removeItem('rating');
     localStorage.removeItem('text-review');
+    alert(`Ваш отзыв был успешно отправлен и будет отображён после модерации`);
   }
 
   return (
