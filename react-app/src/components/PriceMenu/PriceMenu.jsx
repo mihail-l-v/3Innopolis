@@ -1,15 +1,21 @@
 import './_price-menu.scss';
 import './_button.scss';
 import FavoritesButton from '../FavoritesButton/FavoritesButton';
+import FavoritesButtonAdd from '../FavoritesButtonAdd/FavoritesButtonAdd';
 import { useSelector, useDispatch } from 'react-redux';
 import { addProduct, removeProduct } from './../../reducers/cart-reducer';
-// import FavoritesButtonAdd from '../FavoritesButtonAdd/FavoritesButtonAdd';
+import { addFavorites, removeFavorites } from './../../reducers/favorites-reducer';
 
 function PriceMenu() {
   const products = useSelector((store) => store.cart.products);
+  const favoriteProducts = useSelector((store) => store.favorites.products);
   const dispatch = useDispatch();
+
   const iphone = {id: 4884, name: `Iphone 13`};
+
   const hasInCart = products.some((prevProduct) => {
+    return prevProduct.id === iphone.id});
+  const hasInFavorites = favoriteProducts.some((prevProduct) => {
     return prevProduct.id === iphone.id});
 
   function handleAddProduct(e, product) {
@@ -22,6 +28,16 @@ function PriceMenu() {
     dispatch(action);
   };
 
+  function handleAddFavorites(e, product) {
+    const action = addFavorites(product);
+    dispatch(action);
+  }
+
+  function handleDelFavorites(e, product) {
+    const action = removeFavorites(product);
+    dispatch(action);
+  }
+
   return (
     <div className="price-menu">
       <div className="price-menu__wrapper">
@@ -29,10 +45,15 @@ function PriceMenu() {
           <span className="price-menu__old-price">75 990₽</span>
           <span className="price-menu__discont">-8%</span>
         </div>
-        <button className="price-menu__favorites-button" type="button">
-          <FavoritesButton />
-          {/* <FavoritesButtonAdd /> */}
+        {hasInFavorites ? (
+          <button className="price-menu__favorites-button" onClick={(e) => handleDelFavorites(e, iphone)} type="button">
+          <FavoritesButtonAdd />
         </button>
+        ) : (
+          <button className="price-menu__favorites-button" onClick={(e) => handleAddFavorites(e, iphone)} type="button">
+          <FavoritesButton />
+        </button>
+        )}
       </div>
       <h3 className="price-menu__price">67 990₽</h3>
       <p className="price-menu__delivery">Самовывоз в четверг, 1 сентября — <span className="price-menu__delivery-bold">бесплатно</span></p>
