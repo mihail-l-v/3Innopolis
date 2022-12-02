@@ -47,7 +47,7 @@ function ProductColorList() {
         const CurrentClassName = actived ? 'product-color__picture_current' : '';
         return (
           <picture {...restProps} className={`product-color__picture ${CurrentClassName}`} key = {color.id} onClick={(e) => {handleColor(e, color.id)}}>
-            <img className= 'product-color__item' src={color.image} height="60" alt={color.alt} key = {color.id} />
+            <img className= 'product-color__item' src={color.image} height="60" alt={color.alt} />
           </picture>
         );
       })}
