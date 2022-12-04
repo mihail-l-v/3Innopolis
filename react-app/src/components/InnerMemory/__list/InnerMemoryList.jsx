@@ -18,11 +18,11 @@ function InnerMemoryList() {
 
   return (
     <div className="inner-memory__list">
-      {memores.map((memory, index, ...restProps) => {
+      {memores.map((memory, index) => {
         const actived = index === activeMemory;
         const CurrentClassName = actived ? 'product-color__picture_current' : '';
         return (
-          <button className={`inner-memory__item ${CurrentClassName}`} {...restProps} onClick={(e) => {handleMemory(e, memory.id)}} type="button" key={memory.id}>{memory.memory} ГБ</button>
+          <button className={`inner-memory__item ${CurrentClassName}`} onClick={(e) => {handleMemory(e, memory.id)}} type="button" key={memory.id}>{memory.memory} ГБ</button>
         );
 
       })}

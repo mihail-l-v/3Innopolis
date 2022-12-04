@@ -42,11 +42,11 @@ function ProductColorList() {
 
   return (
     <div className="product-color__list">
-      {colors.map((color, index, ...restProps) => {
+      {colors.map((color, index) => {
         const actived = index === activedColor;
         const CurrentClassName = actived ? 'product-color__picture_current' : '';
         return (
-          <picture {...restProps} className={`product-color__picture ${CurrentClassName}`} key = {color.id} onClick={(e) => {handleColor(e, color.id)}}>
+          <picture  className={`product-color__picture ${CurrentClassName}`} key = {color.id} onClick={(e) => {handleColor(e, color.id)}}>
             <img className= 'product-color__item' src={color.image} height="60" alt={color.alt} />
           </picture>
         );
